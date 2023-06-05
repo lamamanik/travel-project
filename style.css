@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  background-color: black;
+}
+
+.nav-list {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 25px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list li a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.right-nav {
+  width: 50%;
+  padding: 0 25px;
+  text-align: right;
+}
+
+.logo img {
+  width: 50px;
+  padding-left: 40px;
+  border: 3px;
+  border-radius: 20px;
+}
+
+#search {
+  padding: 5px;
+  border: 3px;
+  border-radius: 5px;
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.7) url("images/bg1.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 100%;
+  height: 80%;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.firstsection {
+  height: 100vh;
+  margin: 0;
+}
+
+.firsthalf {
+  margin-top: 60px;
+  margin-left: 40px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.secondhalf {
+  width: 50%;
+  overflow: hidden;
+}
+
+.secondhalf img {
+  height: 120vh;
+}
+
+.bigtext {
+  font-size: 50px;
+}
+
+.smalltext {
+  font-size: 18px;
+}
+
+.btn {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 17px;
+  background: white;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  background: brown;
+  cursor: pointer;
+  color: white;
+}
+.btn-sm:hover {
+  background-color: grey;
+}
+.btn:hover {
+  background-color: grey;
+}
+
+.secondsection {
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.sectiontag {
+  padding: 12px 0;
+}
+
+.left {
+  flex-direction: row-reverse;
+  padding: 0 30px;
+  margin-left: 100px;
+}
+.paras {
+  margin-top: 3px;
+  padding: 0 25px;
+}
+
+.thumbnail img {
+  width: 350px;
+  margin-top: 70px;
+}
+
+/* ******producttt carddddd******* */
+/* ***section packages** */
+
+.third-section {
+  background-color: #393646;
+}
+.packages {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3px;
+  justify-content: space-evenly;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 30px;
+  margin-top: 10px;
+}
+
+.productimg {
+  width: 250px;
+  margin-top: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+}
+.product-card {
+  background-color: #222831;
+  width: 400px;
+  border-radius: 25px;
+  padding: 25px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.product-title {
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.product-price {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.add-to-cart-btn {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.viewmore-button {
+  display: inline-block;
+  color: blue;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.viewmore-button:hover {
+  color: #8f43ee;
+}
+
+/* ***********footer********* */
+
+.footer {
+  background-color: #112d4e;
+  color: white;
+  height: 200px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 100%;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  margin-left: 50px;
+}
+
+.footer-contact {
+  margin-left: 50px;
+}
+
+/* ************************************Responsive******************************************* */
+
+.burger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+  display: none;
+}
+
+.line {
+  width: 33px;
+  background-color: white;
+  height: 5px;
+  margin: 3px;
+}
+
+@media only screen and (max-width: 1225px) {
+  .firsthalf {
+    width: 40%;
+  }
+
+  .secondhalf {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .right-nav {
+    width: 30%;
+    text-align: center;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .h-nav {
+    height: 65px;
+  }
+
+  .v-class {
+    opacity: 0;
+  }
+}
